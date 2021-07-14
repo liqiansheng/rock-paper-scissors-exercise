@@ -1,4 +1,20 @@
 import random
+
+# my-secure-project/my_script.py
+
+import os
+from dotenv import load_dotenv
+
+load_dotenv() #> loads contents of the .env file into the script's environment
+
+user_name = os.getenv("USER_NAME")
+print(user_name) # reads the variable from the environment
+#> "Hello World"
+
+
+
+
+
 print("Rock, Paper, Scissors, Shoot!")
 
 # ASK FOR A USER INPUT
