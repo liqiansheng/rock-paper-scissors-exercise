@@ -1,20 +1,12 @@
 import random
-
-# my-secure-project/my_script.py
-
 import os
-from dotenv import load_dotenv
+from docenv import load_dotenv
 
 load_dotenv() #> loads contents of the .env file into the script's environment
 
 user_name = os.getenv("USER_NAME")
-print(user_name) # reads the variable from the environment
-#> "Hello World"
 
-
-
-
-
+print("Hi", user_name) # reads the variable from the environment
 print("Rock, Paper, Scissors, Shoot!")
 
 # ASK FOR A USER INPUT
@@ -38,11 +30,11 @@ print("The computer chose: " + computerchoice)
 # DETERMINE THE WINNER
 
 if playerchoice == "rock" and computerchoice == "paper":
-    print("You lose!")
+    print("Computer wins!")
 elif playerchoice == "paper" and computerchoice == "scissors":
-    print("You lose!")
+    print("Computer wins!")
 elif playerchoice == "scissors" and computerchoice == "rock":
-    print("You lose!")
+    print("Computer wins!")
 elif playerchoice == "rock" and computerchoice == "scissors":
     print("You win!")
 elif playerchoice == "paper" and computerchoice == "rock":
@@ -50,7 +42,9 @@ elif playerchoice == "paper" and computerchoice == "rock":
 elif playerchoice == "scissors" and computerchoice == "paper":
     print("You win!")
 else:
-    print("Tie!")
+    print("Tie! Good luck next time!")
+
+print("Thank you for playing!")
 
     
     
