@@ -1,6 +1,6 @@
 import random
 import os
-from docenv import load_dotenv
+from dotenv import load_dotenv
 
 load_dotenv() #> loads contents of the .env file into the script's environment
 
